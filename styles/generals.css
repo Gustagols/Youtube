@@ -28,13 +28,12 @@ img:active {
     align-items: center;
 }
 
-
 .tooltip {
     position: absolute;
     bottom: -25px;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
-    font-size: 12px;
+    font-size: 11px;
     border-radius: 4px;
     padding: 4px;
     opacity: 0;
@@ -53,3 +52,5 @@ img:active {
 .youtube-icon-container .tooltip {
     bottom: -8px;
 }
+
+

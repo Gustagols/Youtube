@@ -11,19 +11,31 @@
 
 .sidebar.active {
    display: unset;
-   width: 200px;
+   width: 190px;
 }
 
 .sidebar-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: 50px;
-    margin: 10px;
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 55px;
+    padding: 2px;
+    margin-bottom: 20px;
+    margin: 8px;
     border-radius: 16px;
     transition: filter 0.15s ease;
     cursor: pointer;
+}
+
+.sidebar-link.active {
+    display: flex;
+    margin-left: 20px;
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+
 }
 
 .sidebar-link:hover {
@@ -33,6 +45,19 @@
 .sidebar-link:active {
     filter: brightness(0.9);
 }
+
+
+.sidebar-icon-text {
+    font-size: 10px;
+    transition: margin 0.15s ease;
+}
+
+.sidebar-icon-text.active {
+    font-size: 11px;
+    margin-left: 12px;
+}
+
+
 
 @media (max-width: 493px) {
 
