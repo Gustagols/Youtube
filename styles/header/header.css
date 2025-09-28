@@ -7,10 +7,10 @@ header {
     left: 0; 
     right: 0; 
     margin: 0;
-    height: 55px;
+    height: 58px;
+    padding-top: 3px;
     background-color: white;
-    border-bottom: 1px solid rgb(228, 228, 228);
-    z-index: 100;
+    z-index: 100 ;
     flex-shrink: 0;
 }
 

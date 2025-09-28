@@ -1,6 +1,7 @@
 body {
     background-color: rgb(253, 253, 253);
-}
+    font-family: Roboto, 'Arial';
+ }
 
 button,
 img {
@@ -16,4 +17,39 @@ img:hover {
 button:active,
 img:active {
     filter: brightness(1);
+}
+
+.youtube-icon-container,
+.search-button,
+.mic-button,
+.notification-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tooltip {
+    position: absolute;
+    bottom: -25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    transition: opacity 0.15s ease;
+}
+
+.youtube-icon-container:hover .tooltip,
+.search-button:hover .tooltip,
+.mic-button:hover .tooltip,
+.notification-container:hover .tooltip {
+    opacity: 1;
+}
+
+.youtube-icon-container .tooltip {
+    bottom: -8px;
 }

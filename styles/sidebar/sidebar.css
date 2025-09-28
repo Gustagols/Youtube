@@ -1,0 +1,43 @@
+.sidebar {
+    position: fixed;
+    top: 61px;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    background-color: white;
+    transition: width 0.15s ease;
+    z-index: 100;
+}
+
+.sidebar.active {
+   display: unset;
+   width: 200px;
+}
+
+.sidebar-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 16px;
+    transition: filter 0.15s ease;
+    cursor: pointer;
+}
+
+.sidebar-link:hover {
+    background-color: whitesmoke;
+}
+
+.sidebar-link:active {
+    filter: brightness(0.9);
+}
+
+@media (max-width: 493px) {
+
+    .sidebar {
+        display: none;
+    }
+
+}

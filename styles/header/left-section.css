@@ -8,16 +8,18 @@
 .hamburguer-icon-container {
     display: flex;
     justify-content: center;
-    margin: 14px;
-    width: 30px; height: 25px;
-    padding: 5px;
-    border-radius: 8px;
+    align-items: center;
+    margin-left: 12px;
+    margin-right: 18px;
+    width: 50px;
+    height: 45px;
+    border-radius: 16px;
     transition: all 0.15s ease;
     cursor: pointer;
 }
 
 .hamburguer-icon-container:hover {
-    background-color: rgb(230, 224, 224); 
+    background-color: whitesmoke;
 }
 
 .hamburguer-icon-container:active {
@@ -30,18 +32,17 @@
     margin-right: 24px;
 }
 
+
 @media (min-width: 601px) and (max-width: 670px) {
-    
+
     .left-section {
         margin-right: 40px;
     }
 }
 
-
 @media (max-width: 580px) {
-    
+
     .left-section {
         flex: 1;
     }
 }
-

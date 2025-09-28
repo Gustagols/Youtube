@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="styles/header/left-section.css">
     <link rel="stylesheet" href="styles/header/middle-section.css">
     <link rel="stylesheet" href="styles/header/right-section.css">
-    <script src="scripts/media-query.js" defer></script>
+    <link rel="stylesheet" href="styles/sidebar/sidebar.css">
+    <script type="module" src="scripts/dom-elements.js"></script>
+    <script type="module" src="scripts/media-query.js"></script>
+    <script type="module" src="scripts/sidebar.js"></script>
     <title>YouTube</title>
 </head>
 
@@ -22,37 +25,36 @@
     <header>
         <div class="left-section">
             <div class="hamburguer-icon-container">
-                <img class="hamburguer-icon" src="assets/header/icons/hamburguer-menu.svg" alt="hamburguer menu">
+                <img class="hamburguer-icon" src="assets/icons/header/hamburguer-menu.svg" alt="hamburguer menu">
             </div>
-            <!-- <div class="youtube-icon-container"> -->
-            <img class="youtube-icon" src="assets/header/icons/youtube-icon.svg" alt="youtube icon">
-            <!-- <div class="tooltip">Youtube Home</div> -->
-            <!-- </div> -->
+            <div class="youtube-icon-container">
+            <img class="youtube-icon" src="assets/icons/header/youtube-icon.svg" alt="youtube icon">
+            <div class="tooltip">Youtube Home</div>
+            </div>
         </div>
 
         <div class="middle-section">
-            <!-- <input class="search-bar" type="text" placeholder="Search"> -->
             <button class="search-button">
-                <img class="search-icon" src="assets/header/icons/search-icon.svg" alt="search icon">
-                <!-- <div class="tooltip">Search</div> -->
+                <img class="search-icon" src="assets/icons/header/search-icon.svg" alt="search icon">
+                <div class="tooltip">Search</div>
             </button>
             <button class="mic-button">
-                <img class="mic-icon" src="assets/header/icons/mic-icon.svg" alt="mic icon">
-                <!-- <div class="tooltip">Search with your voice</div> -->
+                <img class="mic-icon" src="assets/icons/header/mic-icon.svg" alt="mic icon">
+                <div class="tooltip">Search with your voice</div>
             </button>
         </div>
 
         <div class="right-section">
             <button class="create-button">
-                <img class="plus-icon" src="assets/header/icons/plus-icon.svg" alt="plus icon">
+                <img class="plus-icon" src="assets/icons/header/plus-icon.svg" alt="plus icon">
                 Create
             </button>
             <div class="notification-container">
-                <img class="notification-icon" src="assets/header/icons/notification-icon.svg" alt="notification icon">
+                <img class="notification-icon" src="assets/icons/header/notification-icon.svg" alt="notification icon">
                 <div class="notification-count">3</div>
-                <!-- <div class="tooltip">Notifications </div> -->
+                <div class="tooltip">Notifications </div>
             </div>
-            <img class="your-profile-image" src="assets/header/images/profile-img.jpg" alt="profile image">
+            <img class="your-profile-image" src="assets/images/header/profile-img.jpg" alt="profile image">
         </div>
     </header>
  
@@ -61,21 +63,21 @@
 
     <nav class="sidebar">
         <div class="sidebar-link">
-            <!-- <img class="home-icon" src="nested_flexbox/assets/icons/home-icon.svg" alt="home icon">
-            <div class="tooltip">Home</div> -->
+            <img class="home-icon" src="assets/icons/sidebar/home-icon.svg" alt="home icon">
+            <!-- <div class="tooltip">Home</div>  -->
         </div>
         <div class="sidebar-link">
-            <!-- <img class="shorts-icon" src="nested_flexbox/assets/icons/shorts-icon.svg" alt="shorts icon">
-            <div class="tooltip">Shorts</div> -->
+            <img class="shorts-icon" src="assets/icons/sidebar/shorts-icon.svg" alt="shorts icon">
+            <!-- <div class="tooltip">Shorts</div>  -->
         </div>
         <div class="sidebar-link">
-            <!-- <img class="subscription-icon" src="nested_flexbox/assets/icons/subscription-icon.svg" alt="subscription-icon">
-            <div class="tooltip">Subscriptions</div> -->
+            <img class="subscription-icon" src="assets/icons/sidebar/subscription-icon.svg" alt="subscription-icon">
+            <!-- <div class="tooltip">Subscriptions</div>  -->
         </div>
-        <div class="sidebar-link">
+        <!-- <div class="sidebar-link"> -->
             <!-- <img class="you-icon" src="nested_flexbox/assets/icons/you-icon.svg" alt="you-icon">
             <div class="tooltip">You</div> -->
-        </div>
+        <!-- </div> -->
     </nav>
 
 

@@ -1,44 +1,31 @@
-const searchBar = document.createElement('input');
-searchBar.className = 'search-bar';
-searchBar.placeholder = 'Search';
+import { header, rightSection, middleSection, searchButton, searchBar } from "./dom-elements.js";
 
-const middleSection = document.querySelector('.middle-section');
-const searchButton = document.querySelector('.search-button');
+  searchBar.className = 'search-bar';
+  searchBar.placeholder = 'Search';
 
-
-function showSearchBar() {
-
-  if (window.innerWidth > 600) {
-    if (!middleSection.contains(searchBar)) {
-      middleSection.insertBefore(searchBar, searchButton);
-    }
-  } else {
-    if (middleSection.contains(searchBar)) {
-      searchBar.remove();
+  function showSearchBar() {
+    if (window.innerWidth > 600) {
+      if (!middleSection.contains(searchBar)) {
+        middleSection.insertBefore(searchBar, searchButton);
+      }
+    } else {
+      if (middleSection.contains(searchBar)) {
+        searchBar.remove();
+      }
     }
   }
-}
 
-showSearchBar();
-window.addEventListener('resize', showSearchBar);
-
-
-const header = document.querySelector('header');
-const rightSection = document.querySelector('.right-section');
-
-function removeRightSection() {
-
-  if (window.innerWidth > 492) {
-    if (!header.contains(rightSection))
-      header.appendChild(rightSection);
-  } else {
-    if (header.contains(rightSection)) {
-      rightSection.remove();
+  function removeRightSection() {
+    if (window.innerWidth > 492) {
+      if (!header.contains(rightSection)) header.appendChild(rightSection);
+    } else {
+      if (header.contains(rightSection)) rightSection.remove();
     }
   }
-}
 
-removeRightSection();
-window.addEventListener('resize', removeRightSection);
+  showSearchBar();
+  removeRightSection();
 
+  window.addEventListener('resize', showSearchBar);
+  window.addEventListener('resize', removeRightSection);
 
