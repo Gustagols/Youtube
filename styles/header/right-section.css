@@ -1,0 +1,62 @@
+.right-section {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.create-button {
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    border: none;
+    width: 88px;
+    padding: 5px;
+    font: normal 400 13px Roboto;
+    margin-left: 10px;
+}
+
+.plus-icon {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.notification-container {
+    position: relative;
+    width: 28px; height: 28px;
+    transition: filter 0.15s ease;
+    cursor: pointer;
+}
+
+.notification-container:hover { filter: brightness(0.9); }
+.notification-container:active { filter: brightness(1); }
+
+.notification-count {
+    position: absolute;
+    text-align: center;
+    right: -2px; top: -2px;
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(230, 0, 0);
+    color: white;
+    font: normal bold 13px Roboto;
+}
+
+.your-profile-image {
+    border-radius: 50%;
+    width: 30px;
+}
+
+@media (max-width: 580px) {
+
+    .right-section {
+        width: 180px;
+    }
+
+    .create-button {
+        margin-left: 0;
+    }
+}

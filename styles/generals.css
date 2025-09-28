@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(253, 253, 253);
+}
+
+button,
+img {
+    transition: filter 0.15s ease;
+    cursor: pointer;
+}
+
+button:hover,
+img:hover {
+    filter: brightness(0.9);
+}
+
+button:active,
+img:active {
+    filter: brightness(1);
+}

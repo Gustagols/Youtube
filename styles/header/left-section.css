@@ -1,0 +1,47 @@
+.left-section {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.hamburguer-icon-container {
+    display: flex;
+    justify-content: center;
+    margin: 14px;
+    width: 30px; height: 25px;
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 0.15s ease;
+    cursor: pointer;
+}
+
+.hamburguer-icon-container:hover {
+    background-color: rgb(230, 224, 224); 
+}
+
+.hamburguer-icon-container:active {
+    filter: brightness(0.9);
+}
+
+.hamburguer-icon {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+@media (min-width: 601px) and (max-width: 670px) {
+    
+    .left-section {
+        margin-right: 40px;
+    }
+}
+
+
+@media (max-width: 580px) {
+    
+    .left-section {
+        flex: 1;
+    }
+}
+
