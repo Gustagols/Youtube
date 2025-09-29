@@ -1,0 +1,83 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 16px;
+    row-gap: 40px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.video-container {
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 100%;
+    transition: background-color 0.2s ease;
+    /* cursor: pointer; */
+}
+
+.video-container:hover {
+    background-color: rgb(245, 236, 236);
+}
+
+.thumbnail-container {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.video-time {
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 12px;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr 30px;
+}
+
+.video-text-container {
+    width: 100%;
+}
+
+.channel-picture-container {
+    width: fit-content;
+    display: flex;
+    margin: 5px;
+}
+
+.channel-picture {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.video-title {
+    margin-top: 6px;
+    margin-bottom: 4px;
+    font: normal normal 500 14px/20px 'Roboto';
+    /* line-height: 20px; */
+}
+
+.video-author, 
+.video-stats, 
+.author-subscribers {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    margin-top: 8px;
+    line-height: 4px;
+}

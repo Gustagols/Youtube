@@ -49,7 +49,7 @@
 
 .sidebar-icon-text {
     font-size: 10px;
-    transition: margin 0.15s ease;
+    transition: margin 0.15s ease, font 0.15s ease;
 }
 
 .sidebar-icon-text.active {
@@ -65,4 +65,11 @@
         display: none;
     }
 
+    .sidebar.active {
+        width: 150px;
+    }
+
+    .sidebar-link.active {
+        width: 110px;
+    }
 }

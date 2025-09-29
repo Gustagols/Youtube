@@ -1,6 +1,11 @@
 body {
     background-color: rgb(253, 253, 253);
     font-family: Roboto, 'Arial';
+    padding-top: 90px;
+    padding-left: 90px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    height: 100%;
  }
 
 button,
@@ -51,6 +56,13 @@ img:active {
 
 .youtube-icon-container .tooltip {
     bottom: -8px;
+}
+
+@media (max-width: 493px) {
+    
+    body {
+        padding-left: 20px;
+    }
 }
 
 
