@@ -40,7 +40,7 @@ fetch("./data/video-data.json")
                     </p>
                 </div>
                  <div class="options-container">
-                    <img src="../assets/icons/videos/options-icon.svg" alt="options icon">
+                    <img src="assets/icons/videos/options-icon.svg" alt="options icon">
                 </div>
             </div>
         </div> 
