@@ -63,6 +63,10 @@ img:active {
     body {
         padding-left: 20px;
     }
+
+    .tooltip {
+        display: none;
+    }
 }
 
 
